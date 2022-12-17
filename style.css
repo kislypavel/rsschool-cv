@@ -128,7 +128,7 @@ h1.title {
     left: 0;
     width: 60px;
     height: 0px;
-    border: 1px solid #032e4e;;
+    border: 1px solid #032e4e;
 }
 
 .list {
@@ -149,10 +149,45 @@ h1.title {
 .list-contact a {
     text-decoration: none;
     color: #032e4e;
+    transition: all 0.3s ease-in-out;
+}
+
+.list-contact a:hover {
+    padding-left: 3px;
+    font-weight: 600;
 }
 
 .list-item-contact {
     list-style: none;
+}
+
+.divider-graf {
+    width: 87%;
+    height: 3px;
+    background-color: rgb(3, 46, 78);
+    margin: 0 auto;
+}
+
+.divider-graf {
+    position: relative;
+}
+.divider-graf::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 8px;
+    height: 11px;
+    background-color: rgb(3, 46, 78);
+}
+.divider-graf::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 8px;
+    height: 11px;
+    background-color: rgb(3, 46, 78);
 }
 
 
