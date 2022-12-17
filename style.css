@@ -1,7 +1,136 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 16px;
+    color: #032e4e;
+}
+
 .container {
-    max-width: 1280px;
+    max-width: 980px;
     margin: 0 auto;
 }
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248 248 255);
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.container.split {
+    display: flex;
+}
+
+.left-block {
+    width: 480px;
+}
+
+.right-block {
+    margin-left: 15px;
+    width: 100%;
+}
+
+.my-photo {
+    width: 100%;
+    display: block;
+}
+
+.profile-photo {
+    margin: 0;
+}
+
+.content-wrapper {
+    padding: 40px;
+}
+.contacts {
+    background-color: rgb(79, 197, 223);
+}
+
+.skills {
+    background-color: rgb(150, 215, 233);
+}
+
+.languages {
+    background-color: rgb(204, 234, 242);
+}
+h1.title {
+    font-size: 72px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.position {
+    background-color: rgb(150, 215, 233);
+    padding: 15px;
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: rgb(248 248 255);
+    padding: 20px;
+}
+
+.github-logo {
+    position: relative;
+    padding-left: 50px;
+}
+.github-logo::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0px;
+    top: -5;
+    width: 30px;
+    height: 30px;
+    background-image: url(assets/img/github-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.rs-logo {
+    width: 112px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

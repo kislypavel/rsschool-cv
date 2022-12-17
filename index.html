@@ -14,31 +14,42 @@
     <header class="container">
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-item">contacts</li>
-                <li class="nav-item">skills</li>
-                <li class="nav-item">languages</li>
-                <li class="nav-item">summary</li>
-                <li class="nav-item">code</li>
-                <li class="nav-item">code</li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link">Languages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Summary</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Code</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container split">
         <div class="left-block">
-            <section class="profile-photo">
-                <figure>
-                    <img src="my-photo.png" alt="my photo">
-                </figure>
-            </section>
-            <section class="contacts">
+            <figure class="profile-photo">
+                <img class="my-photo" src="assets/img/my-photo.png" alt="my photo">
+            </figure>
+            <section class="content-wrapper contacts">
                 <h2>My Contact info</h2>
-                <p><span>Phone</span> <a href="tel:+375298503203">+375 29 850 32 03</a></p>
-                <p><span>E-mail</span> <a href="mailto:kislypavel@gmail.com">kislypavel@gmail.com</a></p>
-                <p><span>GitHub</span> <a href="https://github.com/kislypavel">@kislypavel</a></p>
-                <p><span>Telegram</span> <a href="https://t.me/k_polwoker">Kisly Pavel</a></p>
+                <ul>
+                    <li><span>Phone:</span> <a href="tel:+375298503203">+375 29 850 32 03</a></li>
+                    <li><span>E-mail:</span> <a href="mailto:kislypavel@gmail.com">kislypavel@gmail.com</a></li>
+                    <li><span>GitHub:</span> <a href="https://github.com/kislypavel">@kislypavel</a></li>
+                    <li><span>Telegram:</span> <a href="https://t.me/k_polwoker">Kisly Pavel</a></li>
+                </ul>
             </section>
-            <section class="skills">
+            <section class="content-wrapper skills">
                 <h2>Skills</h2>
                 <ul>
                     <li>HTML</li>
@@ -54,30 +65,37 @@
                     <li>Have skills with CMS Wordpress, Opencart, Bitrix</li>
                 </ul>
             </section>
-            <section class="languages">
+            <section class="content-wrapper languages">
                 <h2>Languages</h2>
-                <p>English level A1 (Improving my English level at lingualeo.com)</p>
+                <ul>
+                    <li>English level A1 (Improving my English level at lingualeo.com)</li>
+                </ul>
             </section>
         </div>
         <div class="right-block">
-            <section class="profile-name">
-                <h1>Pavel Kisly</h1>
+            <section class="content-wrapper profile-name">
+                <h1 class="title">Pavel Kisly</h1>
+                <p class="position">Junior Front-End developer</p>
             </section>
-            <section class="summary">
+            <section class="content-wrapper summary">
                 <h2>About Me</h2>
                 <p>I am 31 years old, I develop web sites on CMS wordpress, opencart, bitrix. My goal is to strengthen my skills and gain new knowledge in front-end development</p>
             </section>
-            <section class="courses"></section>
-            <section class="education">
+            <section class="content-wrapper courses"></section>
+            <section class="content-wrapper education">
                 <h2>Education</h2>
                 <p>Moscow State University of Economics, Statistics and Informatics, specialization - anti-crisis management</p>
             </section>
-            <section class="code">
+            <section class="content-wrapper code">
                 <h2>Code Example</h2>
             </section>
         </div>
     </main>
 
-    <footer class="container"></footer>
+    <footer class="container footer">
+        <a href="https://rs.school/js-stage0/" ><img class="rs-logo" src="assets/img/rs_school_js.svg" alt="rs logo"> </a>
+        <a href="https://github.com/kislypavel/" class="github-logo">My GitHub</a>
+        <p>2022</p>
+    </footer>
 </body>
 </html>
