@@ -91,14 +91,14 @@ h1.title {
 
 .github-logo {
     position: relative;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 .github-logo::before {
     position: absolute;
     content: "";
     left: 0;
     bottom: 0px;
-    top: -5;
+    top: -5px;
     width: 30px;
     height: 30px;
     background-image: url(assets/img/github-logo.svg);
