@@ -39,12 +39,13 @@ body {
 }
 
 .left-block {
-    width: 480px;
+    width: 500px;
 }
 
 .right-block {
     margin-left: 15px;
     width: 100%;
+    border-right: 1px solid #f8f8ff;
 }
 
 .my-photo {
@@ -94,8 +95,8 @@ h1.title {
     padding-left: 40px;
 }
 .github-logo::before {
-    position: absolute;
     content: "";
+    position: absolute;
     left: 0;
     bottom: 0px;
     top: -5px;
@@ -114,6 +115,44 @@ h1.title {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.divider {
+    position: relative;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 60px;
+    height: 0px;
+    border: 1px solid #032e4e;;
+}
+
+.list {
+    margin-left: 0;
+    padding-left: 15px;
+}
+
+.list-contact {
+    margin-left: 0;
+    padding-left: 0;
+    line-height: 28px;
+}
+
+.list-contact span {
+    font-weight: 600;
+}
+
+.list-contact a {
+    text-decoration: none;
+    color: #032e4e;
+}
+
+.list-item-contact {
+    list-style: none;
 }
 
 
