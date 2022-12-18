@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+</head>
+<body>
+    <header class="container">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#contacts" class="nav-link">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#languages" class="nav-link">Languages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about_me" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#code" class="nav-link">Code</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container split">
+        <div class="left-block">
+            <figure class="profile-photo">
+                <img class="my-photo" src="assets/img/my-photo.png" alt="my photo">
+            </figure>
+            <section class="content-wrapper contacts" id="contacts">
+                <h2 class="divider">My Contact info</h2>
+                <ul class="list-contact">
+                    <li class="list-item-contact">
+                        <span>Phone:</span> <a href="tel:+375298503203">+375 29 850 32 03</a>
+                    </li>
+                    <li class="list-item-contact">
+                        <span>Email:</span> <a href="mailto:kislypavel@gmail.com">kislypavel@gmail.com</a>
+                    </li>
+                    <li class="list-item-contact">
+                        <span>GitHub:</span> <a href="https://github.com/kislypavel">@kislypavel</a>
+                    </li>
+                    <li class="list-item-contact">
+                        <span>Telegram:</span> <a href="https://t.me/k_polwoker">Kisly Pavel</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="content-wrapper skills" id="skills">
+                <h2 class="divider">Skills</h2>
+                <ul class="list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS (basic skill)</li>
+                    <li>PHP (basic skill)</li>
+                    <li>Python (basic skill)</li>
+                    <li>SQL</li>
+                    <li>GIT</li>
+                    <li>Figma</li>
+                    <li>Photoshop</li>
+                    <li>Adobe Premiere Pro</li>
+                    <li>Have skills with CMS Wordpress, Opencart, Bitrix</li>
+                </ul>
+            </section>
+            <section class="content-wrapper languages" id="languages">
+                <h2 class="divider">Languages</h2>
+                <ul class="list">
+                    <li>English level A1 (Improving my English level at lingualeo.com)</li>
+                </ul>
+            </section>
+        </div>
+        <div class="right-block">
+            <section class="content-wrapper profile-name">
+                <h1 class="title">Pavel Kisly</h1>
+                <p class="position">Junior Front-End developer</p>
+            </section>
+            <section class="content-wrapper summary" id="about_me">
+                <h2 class="divider">About Me</h2>
+                <p>I am 31 years old, I develop web sites on CMS wordpress, opencart, bitrix. My goal is to strengthen my skills and gain new knowledge in front-end development</p>
+            </section>
+            <div class="divider-graf"></div>
+            <section class="content-wrapper courses">
+                <h2>Courses</h2>
+                <p><a href="https://rs.school/js-stage0/">RS School «JavaScript/Front-end. Stage 0» (live)</a></p>
+            </section>
+            <div class="divider-graf"></div>
+            <section class="content-wrapper education" id="education">
+                <h2 class="divider">Education</h2>
+                <p>Moscow State University of Economics, Statistics and Informatics, specialization - anti-crisis management</p>
+            </section>
+            <div class="divider-graf"></div>
+            <section class="content-wrapper code" id="code">
+                <h2 class="divider">Code Example</h2>
+                <pre class="scroll-code">
+                    <code>
+document.addEventListener('DOMContentLoaded', function() {
+    var elm = document.querySelectorAll(".thumbnail, .subcategory");
+    var show_block = document.querySelector(".block_show_more");
+    var width_window = window.outerWidth;
+
+    if (width_window >= 991){
+        if (elm.length > 12) {
+            show_block.classList.add('hidden_show_block');
+            let show_more = document.createElement('a');
+            show_more.classList.add('show_more_block_button');
+            show_more.innerHTML = 'Все категории';
+            show_block.after(show_more);
+            document.addEventListener("click", function(e) {
+                    if (e.target.className=="show_more_block_button") {
+                        show_block.classList.toggle('hidden_show_block');
+                        show_more.innerHTML == 'Все категории' ? show_more.innerHTML = 'Скрыть категории' : show_more.innerHTML = 'Все категории';
+                    }
+            });
+        }
+    } else {
+        if (elm.length > 4) {
+            show_block.classList.add('hidden_show_block');
+            let show_more = document.createElement('a');
+            show_more.classList.add('show_more_block_button');
+            show_more.innerHTML = 'Все категории';
+            show_block.after(show_more);
+            document.addEventListener("click", function(e) {
+                    if (e.target.className=="show_more_block_button") {
+                        show_block.classList.toggle('hidden_show_block');
+                        show_more.innerHTML == 'Все категории' ? show_more.innerHTML = 'Скрыть категории' : show_more.innerHTML = 'Все категории';
+                    }
+            });
+        }
+    }
+}, false);
+                    </code>
+                </pre>
+            </section>
+        </div>
+    </main>
+
+    <footer class="container footer">
+        <a href="https://rs.school/js-stage0/" ><img class="rs-logo" src="assets/img/rs_school_js.svg" alt="rs logo"> </a>
+        <span>2022</span>
+        <a href="https://github.com/kislypavel/" class="github-logo">My GitHub</a>
+
+    </footer>
+</body>
+</html>
