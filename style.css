@@ -39,12 +39,12 @@ body {
 }
 
 .left-block {
-    width: 500px;
+    width: 340px;
 }
 
 .right-block {
     margin-left: 15px;
-    width: 100%;
+    width: calc(100% - 340px );
     border-right: 1px solid #f8f8ff;
 }
 
@@ -171,6 +171,7 @@ h1.title {
 .divider-graf {
     position: relative;
 }
+
 .divider-graf::before {
     content: "";
     position: absolute;
@@ -180,6 +181,7 @@ h1.title {
     height: 11px;
     background-color: rgb(3, 46, 78);
 }
+
 .divider-graf::after {
     content: "";
     position: absolute;
@@ -189,6 +191,13 @@ h1.title {
     height: 11px;
     background-color: rgb(3, 46, 78);
 }
+.scroll-code {
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+}
+
+
 
 
 
